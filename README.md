@@ -24,7 +24,7 @@ This project implements a multi-modal neural network that integrates image, text
 
 - Image: Visual embeddings are extracted using CLIP ViT-B/32 [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) 
 - Text: Semantic representations are obtained via DistilBERT. [DistilBERT](https://huggingface.co/distilbert-base-uncased) 
-- Audio: Pre-extracted features (e.g., from Wav2Vec2 or VGGish) are linearly projected into a shared embedding space.[Wav2vec2.0](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec#wav2vec-20.)
+- Audio: Pre-extracted features (e.g., from Wav2Vec2 or VGGish) are linearly projected into a shared embedding space.[Wav2vec2.0](https://huggingface.co/facebook/wav2vec2-base-960h)
 
 ### 🔹 Fusion Strategy
 
