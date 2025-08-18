@@ -68,6 +68,9 @@ pip install -r requirements.txt
 This project uses the Flickr30k dataset. You can download it from:
 
 Dataset: Flickr30k [Flickr30k](https://google.github.io/localized-narratives/index.html)
+text: flickr30k_test_captions.jsonl
+image: .jpg
+audio: .ogg
 
 After downloading, organize the files into the following structure:
 
