@@ -1,4 +1,4 @@
-# Multi-Modal Feature Learning with Image, Text, and Audio
+# Cross-Modal Retrieval with Cauchy-Schwarz Divergence
 
 This project implements a multi-modal neural network that integrates image, text, and audio features. It supports contrastive learning and reconstruction objectives, designed for cross-modal retrieval tasks.
 
