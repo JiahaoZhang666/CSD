@@ -37,9 +37,9 @@ This project implements a multi-modal neural network that integrates image, text
 
 ### 🔹 Modalities
 
-- Image: Visual embeddings are extracted using CLIP ViT-B/32 [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) 
-- Text: Semantic representations are obtained via DistilBERT. [DistilBERT](https://huggingface.co/distilbert-base-uncased) 
-- Audio: Pre-extracted features (e.g., from Wav2Vec2 or VGGish) are linearly projected into a shared embedding space.[Wav2vec2.0](https://huggingface.co/facebook/wav2vec2-base-960h)
+- Video
+- Text
+- Motion
 
 ### 🔹 Fusion Strategy
 
@@ -67,15 +67,15 @@ pip install -r requirements.txt
 
 This project uses the Flickr30k dataset. You can download it from:
 
-Dataset: Flickr30k [Flickr30k](https://google.github.io/localized-narratives/index.html)
-text: flickr30k_test_captions.jsonl
-image: .jpg
-audio: .ogg
+Dataset: KITML [KITML]
+video
+text
+motion
 
 After downloading, organize the files into the following structure:
 
-data/Flickr30k/
-├── Flickr30k/
+data/KITML/
+├── KITML/
 │   ├── images/              # Original image files (.jpg)
 │   ├── audio_features/      # Pre-extracted audio features (.npy)
 ├── flickr30k_train_captions.jsonl
