@@ -2,6 +2,12 @@
 
 This project implements a multi-modal neural network that integrates image, text, and audio features. It supports contrastive learning and reconstruction objectives, designed for cross-modal retrieval tasks.
 
+## Highlights
+1. First application of CS divergence to cross-modal retrieval.
+2. Stable, hyperparameter-free, and linearly scalable alignment.
+3. Generalized CS (GCS) extends to arbitrary modalities using Hölder’s inequality.
+4. Plug-and-play: simply replace KL/MMD losses in existing frameworks.
+5. Outperforms SOTA on CUHK-PEDS, Wikipedia, NUS-WIDE, PKU-XMediaNet, Flickr30K, KIT-ML.
 ## Project Structure
 
 ├── data
@@ -46,7 +52,7 @@ pip install -r requirements.txt
 
 This project uses the Flickr30k dataset. You can download it from:
 
-Dataset: Flickr30k (https://google.github.io/localized-narratives/index.html)
+Dataset: Flickr30k [Flickr30k](https://google.github.io/localized-narratives/index.html)
 
 After downloading, organize the files into the following structure:
 
