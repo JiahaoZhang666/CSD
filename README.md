@@ -1,33 +1,27 @@
 # Cross-Modal Retrieval with Cauchy-Schwarz Divergence
 
+> We introduce **Cauchy–Schwarz (CS) divergence** as a stable, hyperparameter-free alternative to KL/MMD for cross-modal retrieval and propose **Generalized CS (GCS) divergence** that aligns **N modalities** jointly via a **bidirectional circular matching scheme**—no pairwise comparisons required.
+> 
+
 This project implements a multi-modal neural network that integrates image, text, and audio features. It supports contrastive learning and reconstruction objectives, designed for cross-modal retrieval tasks.
 
-## Highlights
-###  First application of CS divergence to cross-modal retrieval.
-###  Stable, hyperparameter-free, and linearly scalable alignment.
-###  Generalized CS (GCS) extends to arbitrary modalities using Hölder’s inequality.
-###  Plug-and-play: simply replace KL/MMD losses in existing frameworks.
-###  Outperforms SOTA on CUHK-PEDS, Wikipedia, NUS-WIDE, PKU-XMediaNet, Flickr30K, KIT-ML.
+## 🚀 Highlights
+
+- **CS divergence**: stable, **hyperparameter-free** distribution alignment for bi-modal retrieval.
+- **GCS divergence**: **linearly scalable** joint alignment for **3+ modalities**
+- **Plug-and-Play**: drop-in replacement for KL/MMD losses in existing frameworks (e.g., JFSE, LAVIMO, DRCL, CMPM).
+- Works across **image / text / audio / video / motion / ...**
 
 ## Baseline Integration
-### Bi-Modal Retrieval
-#### Baseline:
-#### Original Alignment: KL divergence
-#### Our Modification: Simply replace KL divergence with Cauchy–Schwarz (CS) divergence, keeping all other components unchanged.
-#### Effect: Improves retrieval accuracy while ensuring numerical stability and no hyperparameter tuning.
-### Tri-Modal Retrieval
-#### Baseline:
-#### Original Alignment: Pairwise KL divergence across modalities
-#### Our Modification: Replace all pairwise KL divergences with Generalized CS (GCS) divergence.
-#### Effect: 
-##### Eliminates the need for pairwise alignment.
-##### Performs joint alignment across all modalities in a bidirectional circular matching scheme.
-##### Scales linearly with the number of modalities, making it efficient for 3 or more modalities.
-### Plug-and-Play Flexibility
-#### Our CS/GCS divergence modules are plug-and-play:
-##### Can replace KL, MMD, or other divergence-based alignments in any retrieval framework.
-##### Support N-modality alignment without requiring pairwise comparisons.
-##### Work seamlessly with existing architectures (CMPM, JFSE, LAVIMO, DRCL, etc.).
+### 🔹 Bi-Modal Retrieval (Image–Text)
+ - Original Alignment: KL divergence
+ - Ours: Replace KL with  with Cauchy–Schwarz (CS) divergence.
+ - ✅ No other changes → significant performance gains.
+### 🔹 Tri-Modal Retrieval (Video–Text–Motion / Image–Text–Audio)
+ - Original Alignment: Pairwise KL divergence
+ - Ours: Replace with Generalized CS (GCS) divergence.
+ - ✅ Eliminates pairwise alignment
+ - ✅ Supports 3+ modalities seamlessly
 
 ## Project Structure
 
