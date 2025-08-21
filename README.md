@@ -13,7 +13,7 @@ This work addresses the **limitations of existing cross-modal retrieval (CMR)** 
 
 ## 🚀 News
 
-- **[2025/08/25]** First release 🎉
+- **[2025/08/01]** First release 🎉
 
 ## 📦 Model Zoo
 
