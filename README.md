@@ -104,11 +104,10 @@ Feel free to **open an Issue** or **submit a Pull Request** for ideas, suggestio
 If you find this project helpful, please cite our paper:
 
 ```
-@inproceedings{zhang2025cross,
+@article{zhang2025cross,
   title={Cross-Modal Retrieval with Cauchy-Schwarz Divergence},
-  author={Zhang, Jiahao and Yin, Wenzhe and Yu, Yi and Tang, Suhua},
-  booktitle={Proceedings of the 28th ACM International Conference on Multimedia},
-  pages={to appear},
+  author={Zhang, Jiahao and Yin, Wenzhe and Yu, Shujian},
+  journal={arXiv preprint arXiv:2509.21339},
   year={2025}
 }
 ```
