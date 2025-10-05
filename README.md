@@ -15,14 +15,6 @@ This work addresses the **limitations of existing cross-modal retrieval (CMR)** 
 
 - **[2025/08/01]** First release 🎉
 
-## 📦 Model Zoo
-
-| Setting  | Datasets | Avg. | Weights |
-|----------|:--------:|:--------:|:-------:|
-| [language video motion](configs/LVM.yaml) | KIT-ML | 0.811 | - |
-
-**More pretrained weights will be released soon.**
-
 ## ⚙️ Installation
 
 ### 1. Clone the repository
